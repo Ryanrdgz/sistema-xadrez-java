@@ -1,10 +1,11 @@
 package src.application;
 
-import src.boardgame.Tabuleiro;
+import src.xadrez.PartidaXadrez;
 
 public class Program {
     public static void main(String[] args) {
         
-        Tabuleiro tab = new Tabuleiro(8, 8);
+        PartidaXadrez partida = new PartidaXadrez();
+        UI.imprimirTabuleiro(partida.getPecas());
     }
 }

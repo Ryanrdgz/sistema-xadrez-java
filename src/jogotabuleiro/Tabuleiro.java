@@ -1,4 +1,4 @@
-package src.boardgame;
+package src.jogotabuleiro;
 
 public class Tabuleiro {
     
@@ -27,5 +27,12 @@ public class Tabuleiro {
     public void setColumns(int columns) {
         this.columns = columns;
     }
+
+    public Peca peca(int row, int column) {
+        return pecas[row][column];
+    }
     
+    public Peca peca(Posicao position) {
+        return pecas[position.getRow()][position.getColumn()];
+    }
 }

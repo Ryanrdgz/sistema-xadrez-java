@@ -1,8 +1,8 @@
-package src.boardgame;
+package src.jogotabuleiro;
 
 public class Peca {
     
-    protected Position position;
+    protected Posicao position;
     private Tabuleiro tabuleiro;
 
     public Peca(Tabuleiro tabuleiro) {
